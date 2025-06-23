@@ -1,0 +1,71 @@
+/* Center and Style Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px;
+  }
+  
+  /* Rounded Search Input */
+  .search-container input {
+    width: 60%;
+    max-width: 500px;
+    padding: 12px 18px;
+    font-size: 18px;
+    border: 2px solid #4CAF50;
+    border-radius: 50px; /* Rounded edges */
+    outline: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover Effect for Input */
+  .search-container input:hover {
+    background-color: #f5fff5;
+    border-color: #45a049;
+    box-shadow: 0px 4px 12px rgba(0, 128, 0, 0.3);
+  }
+  
+  /* Focus Effect */
+  .search-container input:focus {
+    border-color: #2E8B57;
+    box-shadow: 0 0 12px rgba(46, 139, 87, 0.5);
+    background-color: white;
+  }
+  
+  /* 🔍 Search Button */
+  .search-container button {
+    padding: 12px 18px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Rounded */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Hover Effect for Button */
+  .search-container button:hover {
+    background-color: #8e386e;
+    box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .search-container input {
+      width: 75%;
+      font-size: 16px;
+    }
+    .search-container button {
+      font-size: 16px;
+      padding: 10px 14px;
+    }
+  }
+  

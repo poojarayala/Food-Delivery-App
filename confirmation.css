@@ -1,0 +1,39 @@
+.confirmation-container {
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: green;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .home-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3;
+  }
+  .online:hover {
+    background-color: #0056b3 !important;
+    transform: scale(1.08) !important;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4) !important;
+}
+
+.cod:hover {
+    background-color: #1e7e34 !important;
+    transform: scale(1.08) !important;
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4) !important;
+}

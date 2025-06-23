@@ -1,0 +1,76 @@
+.payment-selection-container {
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+/* Common button styles */
+.payment-button, .back-button {
+    display: block;
+    width: 220px;
+    margin: 20px auto; /* Increased margin for better spacing */
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Online Payment Button */
+.online {
+    background-color: #007bff;
+    color: white;
+    width: 220px; /* Ensuring all buttons have the same width */
+}
+
+.online:hover {
+    background-color: #0056b3;
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* Cash on Delivery Button */
+.cod {
+    background-color: #28a745;
+    color: white;
+    width: 220px;
+}
+
+.cod:hover {
+    background-color: #1e7e34;
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* Back Button */
+.back-button {
+    background-color: #dc3545;
+    color: white;
+    width: 220px;
+}
+
+.back-button:hover {
+    background-color: #c82333;
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(220, 53, 69, 0.4);
+}
+
+/* Add spacing between the buttons */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adjust the gap between buttons */
+}
+.payment-options {
+    display: flex;
+    flex-direction: column;  /* Stack buttons vertically */
+    align-items: center;  /* Center align buttons */
+    gap: 15px;  /* Space between buttons */
+}

@@ -1,0 +1,553 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure full background coverage */
+  padding-top: 20px; /* Prevents the top from being cut off */
+}
+body {
+  padding-top: 50px; /* Increased padding */
+  overflow: hidden; /* Prevents margin collapse */
+}
+
+h1 {
+  margin-top: 50px; /* Ensures enough space */
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff5722;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 40px 0 20px; /* Added top margin to prevent overlap */
+}
+
+/* Hotels Container */
+.hotels-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Increased space between hotel cards */
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hotel card styling */
+.hotel-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  cursor: pointer;
+  width: 320px; /* Consistent size for all hotel cards */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hotel image */
+.hotel-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Hotel card text */
+.hotel-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+html, body {
+  height: auto; /* Allow body to grow */
+  min-height: 100vh; /* Only ensures min height */
+  overflow-y: auto; /* Enables scrolling */
+  display: block; /* Remove flex if it's causing issues */
+}
+
+.hotel-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Price & Distance */
+.price-distance {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  align-items: center;
+}
+
+.price-distance span {
+  font-weight: bold;
+}
+
+/* Order Button */
+.order-item-button {
+  padding: 8px 12px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.order-item-button:hover {
+  background-color: #e64a19;
+}
+
+/* Cart Container */
+.cart-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+/* Remove Button */
+.remove-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #c9302c;
+}
+
+/* Back Button */
+.back-button {
+  background: red;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: darkred;
+}
+
+.hotel-name {
+  font-size: 18px;
+  font-weight: bold;
+  display: block; /* Ensure it's visible */
+  color: #000; /* Make sure it's not blending into the background */
+}
+
+/* Menu Container */
+.menu-items {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Adjust for smaller screens */
+}
+.menu-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Address & Ratings */
+.details {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Menu Item Styling */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.menu-item:hover {
+  transform: scale(1.03);
+  background: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hotels-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .hotel-card {
+      width: 90%;
+  }
+
+  
+
+  h1 {
+      font-size: 2rem; /* Smaller heading for mobile */
+  }
+}
+/* Dashboard Styles */
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.menu-category h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.order-item-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.order-item-button:hover {
+  background-color: #45a049;
+}
+
+.cart-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove-button {
+  color: #ff6347;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  color: #e62e00;
+}
+
+.checkout-button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout-button:hover {
+  background-color: #1976D2;
+}
+
+/* Hotel Card Styles */
+.hotels-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hotel-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hotel-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.hotel-card p {
+  margin: 5px 0;
+}
+button {
+  margin-left: 10px; /* Adjust as needed */
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu-item-details {
+  display: flex;
+  align-items: center;
+}
+
+.dish-image {
+  width: 60px; /* Size of the image */
+  height: 60px;
+  margin-right: 10px; /* Space between image and text */
+}
+img {
+  width: 100px; /* Adjust as needed */
+  height: 80px;
+  object-fit: cover; /* Ensures the image fits without distortion */
+  border-radius: 8px; /* Optional for rounded corners */
+  margin-right: 10px;
+}
+
+.hotel-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.hotel-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hotel-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Layout for menu and order summary */
+.menu-layout {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Menu container */
+.menu-container {
+  width: 65%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Order summary container */
+.order-summary {
+  width: 30%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+/* Order button with quantity update */
+.order-item-button {
+  padding: 8px 12px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.order-item-button:hover {
+  background-color: #e64a19;
+}
+
+/* Order controls */
+.order-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Checkout button */
+.checkout-button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.checkout-button:hover {
+  background-color: #1976D2;
+}
+
+/* Hotel card styling */
+.hotel-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  cursor: pointer;
+  width: 320px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-layout {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu-container {
+      width: 90%;
+  }
+
+  .order-summary {
+      width: 90%;
+      margin-top: 20px;
+      margin-left: 0;
+  }
+}
+.back-button {
+  padding: 6px 12px; /* Reduce padding */
+  font-size: 14px; /* Reduce text size */
+}
+.search-bar {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.8);
+}
+
+.header-icons {
+  display: flex;
+  justify-content: flex-end; /* Move icons to the right */
+  gap: 20px; /* Space between icons */
+  padding: 10px 20px;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Slightly enlarges icon on hover */
+  color: #ff6600; /* Changes color on hover */
+}
+body {
+  background: linear-gradient(to right, #dfe9f3, #ffffff); 
+}
+
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Increase spacing */
+}
+
+.header-icons img {
+  transition: transform 0.3s;
+}

@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffffff, #e3f2fd);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+/* Main Container */
+.restaurant-container {
+  width: 100vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Content Wrapper */
+.restaurant-content {
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Restaurant Header */
+.restaurant-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.restaurant-name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1e88e5;
+}
+
+.restaurant-details {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Menu Container */
+.menu-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Menu Item Card */
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #e0e0e0;
+}
+
+.menu-item:hover {
+  background: #e3f2fd;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Item Details */
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Dish Image */
+.dish-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover .dish-image {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Order Button */
+.order-button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.order-button:hover {
+  background: #e64a19;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-container {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
